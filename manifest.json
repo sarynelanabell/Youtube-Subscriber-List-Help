@@ -1,19 +1,37 @@
 {
+
   "manifest_version": 3,
+
   "name": "YouTube Subscription Cleaner",
+
   "description": "A tool to clean up your YouTube subscriptions",
+
   "version": "1.0",
+
   "permissions": [
-    "identity",
-    "https://www.googleapis.com/*"
+
+    "identity"
+
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "action": {
-    "default_popup": "popup.html"
-  },
+
   "host_permissions": [
+
+    "https://www.googleapis.com/*",
+
     "https://www.youtube.com/*"
-  ]
+
+  ],
+
+  "background": {
+
+    "service_worker": "background.js"
+
+  },
+
+  "action": {
+
+    "default_popup": "popup.html"
+
+  }
+
 }
